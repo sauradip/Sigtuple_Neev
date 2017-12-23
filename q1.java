@@ -28,7 +28,7 @@ public class q1 {
                    
                     if( arr[k] == (num1+num2))
                     {
-                         System.out.println(num1 + " + " + num2 + " = " + arr[k]);
+                       
                          result=result+1;
                     }
                         
