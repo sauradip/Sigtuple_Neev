@@ -19,7 +19,7 @@ public class sum {
         {
             arr[j]=Integer.parseInt(scan.next());
         }
-        //Arrays.sort(arr);
+        Arrays.sort(arr);
         int num1,num2,result=0;
         // start point of calculation is end of array
         int head=i-1;  
