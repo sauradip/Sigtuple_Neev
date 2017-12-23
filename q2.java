@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.String.*;
 
- public class q2 {
+ public class bubble {
 
 	public static void bubbleBurst(int[] array) {
 		int res = 0;
@@ -20,7 +20,7 @@ import java.lang.String.*;
 			row.remove(index); // removing that burst bubble from list
 		}
 		// after all iteration i will have a list with size 3 atleast now to burst remaining 
-		res += row.get(0) * row.get(1) * row.get(2) + row.get(0) * row.get(2) + Math.max(row.get(0), row.get(2)); 
+		res += row.get(0) * row.get(1) * row.get(2) + Math.min(row.get(0) , row.get(2))* Math.max(row.get(0), row.get(2))+ Math.max(row.get(0), row.get(2)); 
 		System.out.println(res);
 		
 	}
@@ -89,7 +89,7 @@ import java.lang.String.*;
 		for(String w:res){  
 			arr[j++]=Integer.parseInt(w)  ;
 		}  
-		q2 cl=new q2();
+		bubble cl=new bubble();
 	    cl.bubbleBurst(arr);
 	}
 
