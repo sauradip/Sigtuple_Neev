@@ -69,7 +69,7 @@ import java.lang.String.*;
 
 	public static void main(String args[]) throws IOException
 	{
-		// Reading file from current directory of q2.java
+		// Reading file from current directory of bubble.java
 		File file = new File("input.txt");
 		FileReader fileReader = new FileReader(file);
 		BufferedReader bufferedReader = new BufferedReader(fileReader);
